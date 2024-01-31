@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{max-width: 2200px; margin: 0 auto;}
+
+input::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.hero-clip-path{
+  	height:500px;
+	background-size: cover;
+  	background-position: top;
+
+  	clip-path: polygon(0 0, 100% 0, 100% 450px, 0 100%);
+}
+
+.hero-img{
+	position: relative;
+	bottom: 50px;
+}
