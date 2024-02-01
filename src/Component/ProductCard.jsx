@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom'
 
 export const ProductCard = ({product}) => {
   return (
-    <div className="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+    <div className="w-full bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
             <img src={product.image}
-                    alt="Product" className="h-80 w-72 object-cover rounded-t-xl" />
-            <div className="px-4 py-3 w-72">
+                    alt="Product" className="h-80 w-full object-cover rounded-t-xl" />
+            <div className="px-4 py-0 w-full">
                 <span className="text-gray-400 mr-3 uppercase text-xs">{product.category}</span>
                 <Link to={`/product/${product.id}`}><p className="text-lg font-bold text-black truncate block capitalize">{product.title}</p></Link>
                 <div className="flex items-center">

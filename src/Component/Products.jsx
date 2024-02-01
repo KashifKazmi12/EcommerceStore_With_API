@@ -48,7 +48,7 @@ export const Products = (props) => {
         <>{loading && <div className="flex justify-center align-middle"><img src={loadingImg} alt='loading'/></div>}
         {error && "Error in fetching products"}
         <section id="Projects"
-            className="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-24">
+            className="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-5 mt-10 mb-24">
             {
                 productsList && productsList.map((product)=>{
                     return  <ProductCard key={product.id} product={product}/>

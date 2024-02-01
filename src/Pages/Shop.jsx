@@ -37,7 +37,7 @@ export const Shop = () => {
       <MainNavigation className={'text-gray-800'} />
       <div className="bg-white">
         <div>
-          <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <main className="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8">
             <div className="flex items-baseline justify-between border-b border-gray-200 pb-6 pt-24">
               <h1 className="text-4xl font-bold tracking-tight text-gray-900">New Arrivals</h1>
 
@@ -96,9 +96,9 @@ export const Shop = () => {
             <section aria-labelledby="products-heading" className="pb-24 pt-6">
               <h2 id="products-heading" className="sr-only">Products</h2>
 
-              <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-4">
+              <div className="grid grid-cols-1 gap-x-3 gap-y-10 lg:grid-cols-4">
                 {/* <!-- Filters --> */}
-                <form className="hidden lg:block sticky top-0">
+                <form className="hidden lg:block sticky top-0 col-span-1">
                   <h3 className="sr-only">Categories</h3>
                   <ul className="space-y-4 border-b border-gray-200 pb-6 text-sm font-medium text-gray-900">
                     {/* --------------------------------- */}
@@ -144,7 +144,7 @@ export const Shop = () => {
                                 type="checkbox"
                                 checked={checkboxes[type][checkboxName]}
                                 onChange={() => handleCheckBoxes(type, checkboxName)}
-                                className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                                className="h-4 w-3 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                               />
                               <label
                                 htmlFor={`filter-${type}-${checkboxName}`}
