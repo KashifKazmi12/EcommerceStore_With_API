@@ -1,5 +1,7 @@
 import React, {  useState } from "react";
 import { MainNavigation } from "../Component/MainNavigation";
+import {Footer} from '../Component/Footer'
+
 
 export default function Wishlist() {
     const [show1, setshow1] = useState(false);
@@ -221,6 +223,7 @@ export default function Wishlist() {
                 </div>
             </div>
         </div>
+        <Footer/>
         </>
     );
 }

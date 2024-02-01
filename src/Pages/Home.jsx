@@ -11,7 +11,7 @@ export default function Home() {
         <Hero/>
         <Categories/>
         <Banner/>
-        <Products limit={6}/>
+        <div className="w-5/6 mx-auto"><Products limit={6}/></div>
         <Footer/>
         </>
     );

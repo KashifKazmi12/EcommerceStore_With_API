@@ -3,7 +3,7 @@ import { MainNavigation } from '../Component/MainNavigation'
 import { useNavigate } from 'react-router-dom'
 
 export const SingleProduct = () => {
-    const [product, setProduct] = useState({})
+    const [product, setProduct] = useState()
     const [value, setValue] = useState(1)
 
     const navigator = useNavigate()
@@ -26,7 +26,7 @@ export const SingleProduct = () => {
   return (
     <section>
         <MainNavigation className={'text-gray-800'}/>
-        <section className="overflow-hidden bg-white py-11 font-poppins dark:bg-gray-800">
+        {product && <section className="overflow-hidden bg-white py-11 font-poppins dark:bg-gray-800">
         <div className="max-w-6xl px-4 py-4 mx-auto lg:py-8 md:px-6">
             <div className="flex flex-wrap -mx-4">
                 <div className="w-full px-4 md:w-1/2 ">
@@ -188,7 +188,7 @@ export const SingleProduct = () => {
                 </div>
             </div>
         </div>
-    </section>
+    </section>}
     </section>
   )
 }

@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { MainNavigation } from '../Component/MainNavigation'
+import {Footer} from '../Component/Footer'
 
 export const Contact = () => {
+  useEffect(()=>{
+  
+  },[])
   return (
     <>
     <MainNavigation className={'text-gray-800'}/>
@@ -26,6 +30,7 @@ export const Contact = () => {
       </form>
   </div>
 </section>
+<Footer/>
     </>
   )
 }

@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 
 export const ProductCard = ({product}) => {
   return (
-    <div className="w-full bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+    <div className="w-full max-w-96 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
             <img src={product.image}
-                    alt="Product" className="h-80 w-full object-cover rounded-t-xl" />
+                    alt="Product" className="w-full object-cover rounded-t-xl" style={{height:'290px'}} />
             <div className="px-4 py-0 w-full">
                 <span className="text-gray-400 mr-3 uppercase text-xs">{product.category}</span>
                 <Link to={`/product/${product.id}`}><p className="text-lg font-bold text-black truncate block capitalize">{product.title}</p></Link>

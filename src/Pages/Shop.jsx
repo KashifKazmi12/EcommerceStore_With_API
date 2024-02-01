@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { MainNavigation } from '../Component/MainNavigation'
 import { Products } from '../Component/Products';
 import { Link, useParams } from 'react-router-dom';
+import {Footer} from '../Component/Footer'
+
 
 export const Shop = () => {
   const [sortingList, setSortingList] = useState(false)
@@ -170,6 +172,7 @@ export const Shop = () => {
           </main>
         </div>
       </div>
+      <Footer/>
     </div>
   )
 }

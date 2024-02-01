@@ -1,4 +1,4 @@
-export const Footer = () => {
+export  const Footer = () => {
     return (
         <div className="relative mt-16" style={{ background: 'linear-gradient(to right bottom, #662d8cee ,#ed1e78ea)' }}>
             <svg
@@ -35,7 +35,7 @@ export const Footer = () => {
                                 <rect x="14" y="11" width="7" height="12" />
                             </svg>
                             <span className="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
-                                Company
+                                E-Shopping
                             </span>
                         </a>
                         <div className="mt-4 lg:max-w-sm">

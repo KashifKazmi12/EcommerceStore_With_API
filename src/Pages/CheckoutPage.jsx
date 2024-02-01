@@ -1,15 +1,17 @@
 import React from 'react'
 import { MainNavigation } from '../Component/MainNavigation'
+import {Footer} from '../Component/Footer'
 
 export const CheckoutPage = () => {
     const handleSubmit = (e)=>{
         e.preventDefault();
     }
   return (
+    <>
     <section>
         <MainNavigation className={'text-gray-800'}/>
          <div className="mt-20">
-            <h1 className="flex items-center justify-center font-bold text-blue-600 text-md lg:text-3xl">Checkout
+            <h1 className="mb-4 text-4xl tracking-tight font-bold text-center text-gray-900 dark:text-white">Checkout
             </h1>
         </div>
         <div className="container p-12 mx-auto">
@@ -143,5 +145,7 @@ export const CheckoutPage = () => {
             </div>
         </div>
     </section>
+    <Footer/>
+    </>
   )
 }
